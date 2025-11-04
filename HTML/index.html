@@ -1,53 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de la app</title>
-    <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Busco Oficio</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
-     <header>
-            <h1>¡Bienvenido a BuscoOficios!</h1>
-        </header>
-    <div class="content-all"> 
-       
-        <main>
-            <section class="introduccion">
-                <h2>La Manera Más Rápida de Conectar Servicios Locales</h2>
-                <p>
-                    (Nombre de la app) es la aplicación móvil diseñada para revolucionar la forma en que los usuarios encuentran y ofrecen servicios en su zona. Nuestro objetivo es eliminar la fricción, ofreciendo una experiencia centrada en la velocidad y la relevancia geográfica.
-                </p>
-                <p>
-                    Ya sea que necesites encontrar un electricista de urgencia o quieras promover tu negocio local, lo haces en tres toques. ¡Descubre el diseño que hace posible esta eficiencia!
-                </p>
-            </section>
-            <section class="presentacion">
-                <div class="telefono-marco">
-                    <img src="../Imagenes/AppInicio.png" alt="Captura de pantalla de la app móvil: Pantalla de inicio" class="pantalla-app">
-                </div>
-                <div class="detalle-app">
-                    <h2>Pantalla de Inicio:</h2>
-                    <p>
-                        La pantalla de inicio está optimizada para la exploración local. Permite a los usuarios encontrar y ofrecer servicios cercanos de forma inmediata, minimizando los pasos para pasar de la necesidad a la solución.
-                    </p>
-                    <h3>Puntos Clave de Diseño:</h3>
-                    <ul>
-                        <li>Búsqueda Contextual: Un campo de búsqueda flotante y accesible que permite consultas por voz o texto.</li>
-                        <li>Categorías de Acceso Rápido: Botones de acceso directo (Estacionamiento, Hotel, Comida) para las necesidades más comunes del usuario en su zona.</li>
-                        <li>Foco Geográfico: Interfaz centrada en el mapa, priorizando la ubicación del usuario para mostrar resultados relevantes y recientes.</li>
-                        <li>Navegación Intuitiva: El historial "Recientes" facilita la repetición de búsquedas frecuentes.</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        
+  <!-- Nav -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="#inicio"><img src="#" alt="Logo "></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#Descargar" class="btn-nav">Descargar APP</a></li>
+        </ul>
+      </nav>
     </div>
-    <footer>
-        <h3>Acerca de esta página</h3>
-        <p>Página diseñada a modo de actividad - Creada por Facundo Joel Orlando</p>
-        <p>Todos los derechos reservados.</p>
-        <p>Fecha de Creación: 03/07/2025</p>
-    </footer>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-parallax" id="inicio">
+    <div class="content">
+      <h1>Bienvenido a Busco Oficio <span></span></h1>
+      <a href="#DescargarAPP" class="btn">Descargar APP</a>
+    </div>
+  </section>
+
+  <!-- Servicio -->
+  <section class="Servicio" id="Servicio">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="#" alt="#servicio1">
+        <h3>#</h3>
+        <p>#</p>
+      </div>
+      <div class="card">
+        <img src="#" alt="#servicio1">
+        <h3>#</h3>
+        <p>#</p>
+      </div>
+      <div class="card">
+        <img src="#" alt="#servicio1">
+        <h3>#</h3>
+        <p>#</p>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Galería de la app -->
+  <section class="galeria-parallax" id="galeria">
+    <h2>Galeria </h2>
+    <div class="carousel">
+      <div class="galeria-card"><img src="#" alt="Galería 1"></div>
+      <div class="galeria-card"><img src="#" alt="Galería 2"></div>
+      <div class="galeria-card"><img src="#" alt="Galería 3"></div>
+    </div>
+  </section>
+
+  <!-- Sobre La Pagina (informacion de que trata)-->
+  <section class="about" id="info">
+    <img class="info" src="#" alt="#">
+    <div class="about-text">
+      <h2>#</h2>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto" id="contacto">
+    <h2>Descargar app </h2>
+    <p>Conectá con nosotros vía WhatsApp </p>
+    <div class="contact-links">
+      <a href="https://wa.me/###" target="_blank" class="contact-icon"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p></p>Todos los derechos reservados</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
