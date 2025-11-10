@@ -2,89 +2,105 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Busco Oficio</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantalla Inicio</title>
+  <link rel="stylesheet" href="../CSS/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Nav -->
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="#inicio"><img src="#" alt="Logo "></a>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">🔧</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Preguntas frecuentes</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="quote">“Conectamos turistas y locales con los mejores servicios en su zona — rápido, fácil y seguro.”</p>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#inicio" class="active">Inicio</a></li>
-          <li><a href="#Descargar" class="btn-nav">Descargar APP</a></li>
-        </ul>
-      </nav>
+      <div class="hero-image phone-frame">
+        <img src="../Imagenes/AppInicio.png" alt="App móvil" />
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero-parallax" id="inicio">
-    <div class="content">
-      <h1>Bienvenido a Busco Oficio <span></span></h1>
-      <a href="#DescargarAPP" class="btn">Descargar APP</a>
-    </div>
-  </section>
+  <section class="servicios">
+    <h2>Todo lo que necesitas,<br> en un solo lugar</h2>
 
-  <!-- Servicio -->
-  <section class="Servicio" id="Servicio">
-    <h2>Servicios</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="#" alt="#servicio1">
-        <h3>#</h3>
-        <p>#</p>
+    <div class="servicios-grid">
+      <div class="servicios-card">
+        <h3>Servicios Verificados</h3>
+        <p>Profesionales con experiencia y reseñas comprobadas para mayor tranquilidad.</p>
       </div>
-      <div class="card">
-        <img src="#" alt="#servicio1">
-        <h3>#</h3>
-        <p>#</p>
+      <div class="servicios-card">
+        <h3>Encuentra ayuda al instante</h3>
+        <p>Busca por zona o categoría para encontrar rápidamente lo que necesitas.</p>
       </div>
-      <div class="card">
-        <img src="#" alt="#servicio1">
-        <h3>#</h3>
-        <p>#</p>
+      <div class="servicios-card">
+        <h3>Compara y elige</h3>
+        <p>Consulta opiniones y precios antes de tomar una decisión.</p>
       </div>
-    
     </div>
   </section>
 
-  <!-- Galería de la app -->
-  <section class="galeria-parallax" id="galeria">
-    <h2>Galeria </h2>
-    <div class="carousel">
-      <div class="galeria-card"><img src="#" alt="Galería 1"></div>
-      <div class="galeria-card"><img src="#" alt="Galería 2"></div>
-      <div class="galeria-card"><img src="#" alt="Galería 3"></div>
+  <section class="steps">
+    <h2>Tan simple como...</h2>
+    <div class="step-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Buscar</h3>
+        <p>Introduce tu necesidad en la barra de búsqueda.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Comparar</h3>
+        <p>Revisa opciones, precios y opiniones.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Contactar</h3>
+        <p>Elige la mejor opción y comunícate fácilmente.</p>
+      </div>
+    </div>
+
+    <div class="map-demo">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.997367909739!2d-58.40418632426512!3d-34.60671545873392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb57d6c8a29b%3A0xbad87a8e3d2dc1d5!2sParque%20de%20los%20Patricios!5e0!3m2!1ses!2sar!4v1699396920000!5m2!1ses!2sar" 
+        width="100%" 
+        height="300" 
+        style="border:0; border-radius:10px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+
+  </section>
+
+  <section class="testimonios">
+    <div class="testimonio">
+      <p>“Me solucionaron el problema en minutos, súper rápido y confiable.”</p>
+      <span>- Analía R., Turista</span>
+    </div>
+    <div class="testimonio">
+      <p>“Una app excelente para ofrecer mis servicios de mantenimiento.”</p>
+      <span>- Daniel M., Profesional</span>
     </div>
   </section>
 
-  <!-- Sobre La Pagina (informacion de que trata)-->
-  <section class="about" id="info">
-    <img class="info" src="#" alt="#">
-    <div class="about-text">
-      <h2>#</h2>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Todos los derechos reservados</p>
+      <div class="social-links">
+        <a href="#">Whatsapp</a>
+      </div>
     </div>
-  </section>
-
-  <!-- Contacto -->
-  <section class="contacto" id="contacto">
-    <h2>Descargar app </h2>
-    <p>Conectá con nosotros vía WhatsApp </p>
-    <div class="contact-links">
-      <a href="https://wa.me/###" target="_blank" class="contact-icon"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p></p>Todos los derechos reservados</p>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="../JAVASCRIPT/script.js"></script>
 </body>
 </html>
