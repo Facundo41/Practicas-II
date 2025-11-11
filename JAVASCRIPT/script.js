@@ -49,3 +49,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.body.style.opacity = "1";
 });
+
+const faqButtons = document.querySelectorAll(".faq-question");
+
+faqButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+
+    // Cerramos todas las respuestas primero
+    document.querySelectorAll(".faq-answer").forEach(a => {
+      if (a !== answer) {
+        a.style.maxHeight = null;
+      }
+    });
+
+    // Abrimos o cerramos la respuesta clickeada
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
+
