@@ -381,3 +381,18 @@ body {
     width: 200px;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-anim {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-anim.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
