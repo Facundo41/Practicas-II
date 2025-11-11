@@ -292,6 +292,7 @@ body {
     background-color: #345ba1;
 }
 
+
 #whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -354,6 +355,39 @@ body {
   text-decoration: underline;
 }
 
+/* FAQ */
+.faq-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .hero-content {
@@ -371,4 +405,19 @@ body {
   .phone-frame img {
     width: 200px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-anim {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-anim.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

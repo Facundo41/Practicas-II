@@ -32,3 +32,20 @@ window.addEventListener('DOMContentLoaded', () => {
     wa.style.display = 'flex'; // aparece despues de unos segundos
   }, 3000);
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".scroll-anim");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+
+  document.body.style.opacity = "1";
+});
