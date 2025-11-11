@@ -13,3 +13,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener("load", () => {
   document.body.style.opacity = 1;
 });
+
+
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert("mensaje enviado");
+    form.reset();
+});
