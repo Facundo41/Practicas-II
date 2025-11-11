@@ -15,9 +15,14 @@ body {
 
 /* --- HERO --- */
 .hero {
-  background: linear-gradient(to bottom, #3b6db1 20%, #ffffff 20%);
+  background-image: linear-gradient(to bottom, rgba(0, 102, 255, 0.7), rgba(138, 43, 226, 0.5)), url('../Imagenes/ImagenBackground.jpg');
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  position: relative; 
   color: white;
   padding-bottom: 4rem;
+  height: 500px;
 }
 
 .navbar {
