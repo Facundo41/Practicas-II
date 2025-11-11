@@ -25,6 +25,19 @@ body {
   height: 500px;
 }
 
+/* ESTILOS CLAVE para el tamaño del icono */
+.logo {
+    display: flex; 
+    align-items: center; 
+    height: 60px;
+}
+.logo-icon {
+    width: 60px; 
+    height: 60px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.464),0 0 20px rgba(255, 255, 255, 0.5);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -253,6 +266,33 @@ body {
 .btn-enviar:hover {
     background-color: #345ba1;
 }
+
+#whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+
+#whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+#whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+
 
 /* Responsivo */
 @media (max-width: 768px) {

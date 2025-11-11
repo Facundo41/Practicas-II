@@ -22,3 +22,13 @@ form.addEventListener('submit', function(e) {
     alert("mensaje enviado");
     form.reset();
 });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const wa = document.getElementById('whatsapp-float');
+  wa.style.display = 'none'; // lo oculpa
+
+  setTimeout(() => {
+    wa.style.display = 'flex'; // aparece despues de unos segundos
+  }, 3000);
+});
