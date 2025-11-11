@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.5;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* --- HERO --- */
+.hero {
+  background-image: linear-gradient(to bottom, rgba(0, 102, 255, 0.7), rgba(138, 43, 226, 0.5)), url('../Imagenes/ImagenBackground.jpg');
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  position: relative; 
+  color: white;
+  padding-bottom: 4rem;
+  height: 500px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 5%;
+}
+
+.hero-text {
+  max-width: 400px;
+  font-size: 1.2rem;
+}
+
+.quote {
+  font-style: italic;
+}
+
+/* --- Celular con efecto real --- */
+.phone-frame {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  border-radius: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transform: rotate(-1deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.phone-frame:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.phone-frame::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.phone-frame img {
+  display: block;
+  width: 250px;
+  height: auto;
+  border-radius: 25px;
+}
+
+/* --- SERVICIOS --- */
+.servicios {
+  text-align: center;
+  padding: 4rem 5%;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.servicios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.servicios-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* --- STEPS --- */
+.steps {
+  background: #fff;
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.step-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  width: 200px;
+}
+
+.step-number {
+  background: #3b6db1;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto 1rem auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.map-demo img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- TESTIMONIO --- */
+.testimonios {
+  background: #f1f5f9;
+  padding: 3rem 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonio{
+  max-width: 300px;
+  font-style: italic;
+  text-align: center;
+}
+
+.contacto {
+    text-align: center;
+    padding: 4rem 5%;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilo general del formulario */
+.contact-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Checkbox */
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Botón enviar */
+.btn-enviar {
+    background-color: #3b6db1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #345ba1;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+/* --- FOOTER --- */
+.footer {
+  background: #3b6db1;
+  color: white;
+  padding: 2rem 5%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-grid,
+  .step-grid,
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-frame img {
+    width: 200px;
+  }
+}
+/* ======= SECCIÓN PREGUNTAS FRECUENTES ======= */
+.faq-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  color: #555;
+  line-height: 1.6;
+}
