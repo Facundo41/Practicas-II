@@ -15,11 +15,23 @@
           <img src="../Imagenes/Icon1.png" alt="Logo de Busco Oficios" class="logo-icon">
         </a>
       </div>
-      <ul class="nav-links">
+      <!-- Added hamburger menu button for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#">Home</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="#faq">Preguntas frecuentes</a></li>
       </ul>
+      <!-- Added compact mobile menu dropdown -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#" class="mobile-menu-item">Home</a>
+        <a href="#contacto" class="mobile-menu-item">Contacto</a>
+        <a href="#faq" class="mobile-menu-item">Preguntas frecuentes</a>
+      </div>
     </nav>
 
     <div class="hero-content">
@@ -76,7 +88,7 @@
 
     <div class="map-demo">
         <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.210103303902!2d-57.83626392439217!3d-38.27207747967312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584bdb5383f1e65%3A0x40b7b61de3da9b7!2sAv.%2023%20%26%20Av.%2026%2C%20Miramar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1731320880000!5m2!1ses!2sar"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1566.2855892611606!2d-57.83947128726142!3d-38.26625049892129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958510892408b0bb%3A0x9513ce2812d7f777!2sI.S.F.T.%20N%C2%B0%20194!5e0!3m2!1ses!2sar!4v1762896182694!5m2!1ses!2sar"
         width="100%" 
         height="300" 
         style="border:0; border-radius:10px;" 
@@ -191,7 +203,7 @@
     <div class="footer-content">
       <p>© 2025 Todos los derechos reservados</p>
       <div class="social-links">
-        <a href="#">Whatsapp</a>
+        <a href="https://wa.me/5491123456789">Whatsapp</a>
       </div>
     </div>
   </footer>
