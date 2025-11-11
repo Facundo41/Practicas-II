@@ -113,7 +113,7 @@ body {
 /* --- SERVICIOS --- */
 .servicios {
   text-align: center;
-  padding: 4rem 5%;
+  padding: 7rem 5%;
 }
 
 .servicios h2 {
@@ -128,18 +128,43 @@ body {
   gap: 2rem;
 }
 
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
 .servicios-card {
   background: #f9f9f9;
   border-radius: 10px;
   padding: 2rem;
   width: 300px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+.servicios-card:hover {
+  background-color: #d3edff;
+  box-shadow: 4px 4px 10px #49474857;
 }
 
 .icon {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.iconos {
+  width: 60px; 
+  height: 50px;
 }
 
 /* --- STEPS --- */
