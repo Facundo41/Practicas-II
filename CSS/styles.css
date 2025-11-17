@@ -113,6 +113,8 @@ body {
   font-size: 1.2rem;
 }
 
+
+
 .quote {
   font-style: italic;
 }
@@ -140,7 +142,7 @@ body {
   top: 8px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 50px;
   height: 6px;
   background: #ddd;
   border-radius: 3px;
@@ -148,9 +150,11 @@ body {
 
 .phone-frame img {
   display: block;
+  max-width: 100%;
   width: 250px;
   height: auto;
   border-radius: 25px;
+  transition: all 0.3s ease;
 }
 
 /* --- SERVICIOS --- */
@@ -567,3 +571,30 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 992px) {
+  .phone-frame img {
+    width: 180px; /* se achica progresivamente */
+  }
+}
+
+/* Pantallas chicas (tablets y celulares) */
+@media (max-width: 768px) {
+  .phone-frame img {
+    width: 120px; /* más pequeño */
+  }
+}
+
+/* Pantallas muy chicas (celulares chicos) */
+@media (max-width: 600px) {
+  .phone-frame {
+    display: none; /* desaparece completamente */
+  }
+  .hero-content {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+

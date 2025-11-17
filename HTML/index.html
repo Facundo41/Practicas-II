@@ -15,7 +15,7 @@
           <img src="../Imagenes/Icon1.png" alt="Logo de Busco Oficios" class="logo-icon">
         </a>
       </div>
-      <!-- Added hamburger menu button for mobile -->
+      
       <button class="hamburger" id="hamburger" aria-label="Menú">
         <span></span>
         <span></span>
@@ -25,17 +25,22 @@
         <li><a href="#">Home</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="https://play.google.com/store" target="_blank">Descargar</a></li>
       </ul>
-      <!-- Added compact mobile menu dropdown -->
+      
       <div class="mobile-menu" id="mobileMenu">
         <a href="#" class="mobile-menu-item">Home</a>
         <a href="#contacto" class="mobile-menu-item">Contacto</a>
         <a href="#faq" class="mobile-menu-item">Preguntas frecuentes</a>
+        <a href="https://play.google.com/store" class="mobile-menu-item" target="_blank">Descargar</a>
       </div>
     </nav>
 
     <div class="hero-content">
       <div class="hero-text">
+        <a href="https://play.google.com/store" target="_blank">
+          <img src="/imagenes/googleplay.png" alt="Google Play">
+        </a>
         <p class="quote">“Conectamos turistas y locales con los mejores servicios en su zona — rápido, fácil y seguro.”</p>
       </div>
       <div class="hero-image phone-frame">
@@ -159,7 +164,33 @@
     </div>
     </section>
 
-      <section id="faq" class="faq-section">
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // evita enviar el form tradicional
+
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const motivo = document.getElementById('motivo').value;
+    const novedades = document.getElementById('novedades').checked ? "Sí" : "No";
+    const mensaje = document.getElementById('mensaje').value;
+
+    const cuerpo = 
+    `Nombre: ${nombre}
+    Email: ${email}
+    Motivo: ${motivo}
+    Desea recibir novedades: ${novedades}
+    Mensaje: ${mensaje}`;
+
+    // Reemplazá este mail por el tuyo
+    const destinatario = "buscooficiosmiramar@gmail.com";
+
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(destinatario)}&su=${encodeURIComponent("Contacto desde la web")}&body=${encodeURIComponent(cuerpo)}`;
+
+    window.open(gmailURL, "_blank");
+    });
+</script>
+
+  <section id="faq" class="faq-section">
   <h2>Preguntas Frecuentes</h2>
 
   <div class="faq-item">

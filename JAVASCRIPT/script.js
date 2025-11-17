@@ -42,7 +42,7 @@ const form = document.getElementById("contactForm")
 
 form.addEventListener("submit", (e) => {
   e.preventDefault()
-  alert("mensaje enviado")
+  alert("Por favor, envíe su mensaje desde su correo. Sus respuestas están precargadas en su mail")
   form.reset()
 })
 
