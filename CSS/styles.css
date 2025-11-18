@@ -161,10 +161,13 @@ body {
 .servicios {
   text-align: center;
   padding: 7rem 5%;
+  padding-top: 50px;
+  margin-top: 150px;
 }
 
 .servicios h2 {
   font-size: 2rem;
+  margin-top: 50px;
   margin-bottom: 2rem;
 }
 
